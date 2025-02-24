@@ -1,0 +1,79 @@
+body, h1, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: antiquewhite;
+    color: #333;
+    height: 100vh; /* Ensures full height for vertical centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for image and content */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Title Styling */
+.title {
+    color: #8c0606;
+    padding: 50px;
+    text-align: center;
+    margin-right: 50px; /* Space between image and title */
+    flex: 1; /* Takes up available space */
+}
+
+/* Image Styling */
+.image {
+    width: 300px;
+    height: 300px;
+    background-image: url('/assets/images/DALL_E_2025-02-23_22.21.38_-_A_high-contrast_image_of_a_man_wearing_traditional_old-fashioned_Jewish_clothing__with_a_joyful_expression_and_long_brown_hair._The_man_has_a_beard_an-removebg-preview.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* Circular shape for the image */
+}
+
+/* MAIN FORM STYLES */
+.main {
+    max-width: 400px;
+    width: 100%; /* Ensures it doesn't overflow on small screens */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box; /* Ensures padding and borders are inside the width calculation */
+    flex: 2; /* Makes the form take more space */
+}
+
+/* Label Styling */
+
+
+/* Confirm Button Styling */
+.confirm-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Button hover effect */
+.confirm-btn:hover {
+    background-color: #45a049;
+}

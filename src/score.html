@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score</title>
+    <link rel="stylesheet" href="../src/css/score.css">
+</head>
+<body>
+    <div class="results-container">
+        <h2>Quiz Results</h2>
+        <div class="result-card">
+          <p class="score" id="score">Your score is: <span id="score-value">0</span> out of 10.</p>
+          <p class="feedback" id="feedback">Great job! Keep it up!</p>
+        </div>
+
+        <!-- Video Popup -->
+        
+      <div id="videoPopup" class="video-popup">
+        <div class="video-content">
+            <video width="600" controls>
+                <source src="https://sora.com/g/gen_01jmv20znneys8jgzar20003kn" type="video/mp4">
+                <source src="https://drive.google.com/uc?export=download&id=1LrWCZEJ0WLu3vwNBz0g4UL5Jz-lN5mIF" type="video/webm"> <!-- Add other formats as fallback -->
+              
+                Your browser does not support the video tag.
+            </video>
+            <button onclick="closePopup()">Close</button>
+        </div>
+      </div>
+
+
+        <button onclick="window.location.href='index.html'">Retake Quiz</button>
+      </div>
+
+      <script src="js/score.js"></script>
+</body>
+</html>
